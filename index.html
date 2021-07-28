@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda CBR</title>
+
     <!--internal stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/cfd69f1693.js" crossorigin="anonymous"></script>
+
+    <!-- animate stylesheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- bootstap stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,12 +22,116 @@
 </head>
 <body>
 
-    <header>
-        <nav></nav>
+    <header style="background-color: #264653;">
+
+        <!-- navigation bar create -->
+        <section class="container fw-normal">
+            <nav class="navbar navbar-expand-lg navbar-dark p-5">
+                <div class="container-fluid">
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                      <li class="nav-item ps-lg-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item ps-lg-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Shop</a>
+                      </li>
+                      <li class="nav-item ps-lg-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">News</a>
+                      </li>
+                      <li class="nav-item ps-lg-3 pe-lg-5">
+                        <a class="nav-link text-light" aria-current="page" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item ps-lg-5">
+                        <button class="btn bg-warning fw-bold">Login</button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </nav>
+            </section>
+
+        <!-- banner section create -->
+        <section class="container mb-5 py-5">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 text-muted d-flex flex-column justify-content-center">
+                    <p class="mb-2">Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="text-light display-3 fw-bold mb-3">Honda CBR 300R</h1>
+                    <p class="">Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim velit <br> mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning text-light me-auto px-5 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title text-success" id="exampleModalLabel">Purchase Bike <i class="fas fa-biking animate__animated animate__backInRight animate__slower text-success"></i></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <h1>This page is under development...</h1>
+                            <p>Thanks for your interest :)</p>
+                            <p class="text-center text-danger fs-4 animate__animated animate__flash animate__infinite animate__delay-2s animate__slower"> <i class="fas fa-biking animate__animated animate__backOutLeft text-dark animate__slower"></i> comming soon <i class="fas fa-biking animate__animated animate__backOutRight text-dark animate__slower"></i></p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 mt-5">
+                    <img class="img-fluid animate__animated animate__fadeInRight animate__slow" src="images/header-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+
 
     </header>
 
     <main>
+
+        <!-- feature bikes article -->
+        <article class="container m-auto pt-5 mt-5">
+        <section class="d-flex flex-column align-items-center">
+            <h1 class="text-dark display-3 fw-bold mb-3">Fetured Bikes 2021</h1>
+            <p class="text-warning fs-5">Best bike collection</p>
+            <hr width="58" class="m-auto">
+        </section>
+        
+        <section class="row my-5 py-5">
+            <div class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="w-75 m-auto">
+                    <img class="img-fluid" style="filter: grayscale(100%);" src="images/feature-bike.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="w-75 m-auto">
+                    <img class="img-fluid" src="images/feature-bike.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 my-5">
+                <div class="w-75 m-auto">
+                    <img class="img-fluid" style="filter: grayscale(100%);" src="images/feature-bike.jpg" alt="">
+                </div>
+            </div>
+            
+            
+        </section>
+
+        </article>
+
+     
 
     </main>
 
